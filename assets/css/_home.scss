@@ -1,0 +1,162 @@
+@import '_variaveis';
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.gota{
+    height: 40%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    .logo{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 100px;
+
+    }
+    .fundo__gota{
+        max-height: 100%;
+    }
+    img{
+        width: 100%;
+        max-height: 100%;
+    }
+
+
+    .gota__descricao{
+        color: $col-branco2;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+
+        h1{
+            font-size: $font-desk-t1 ;
+        }
+    }
+
+}
+
+main{
+    width: 100%;
+    height: 40% ;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .main__cartao{
+        width: 90%;
+        height: 90%;
+        h2{
+            font-size: $font-mobile-t4;
+            color: #202020;
+        }
+        .container__cartao{
+            background: #fff;
+            height: 100%;
+            display: flex;
+            object-fit: cover;
+            overflow-x: scroll;
+            padding: 0.5rem;
+            .cartao{
+                min-width: 40%;
+                height: 100%;
+                margin: 0 0.5rem;
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.616);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                object-fit: cover;
+                span{
+                    color: #272727;
+                    padding: 0.5rem;
+                    position: relative;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 3%;
+                        height: 100%;
+                        background: $back-gotaMe;
+                        top: 0;
+                        left: 0;
+
+                    }
+                }
+                img{
+                    max-width: 60%;
+                    max-height: 80%;
+                }
+            }
+        }
+    }
+}
+
+.rodape{
+    width: 100%;
+    height: 20%;
+    position: relative;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .rodape__descricao{
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        width: 90%;
+        transform: translateX(-17%);
+        display: flex;
+        align-items: center;
+        p{
+            color: $col-branco2;
+        }
+        a{
+            padding-left: 25%;
+            img{
+                width: 50px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 600px)
+{
+    .gota{
+        .logo{
+            width: 55px;
+        }
+        .gota__descricao{
+            h1{
+                font-size: $font-mobile-t1;
+                color: $col-branco1;
+            }
+            p{
+                font-size: $font-mobile-st1;
+                color: $col-branco2;
+            }
+        }
+    }
+
+    //======= MAIN =======
+    .main__cartao{
+        max-height: 60%;
+    }
+    //======= BOTTOM =======
+    .rodape{
+        .rodape__descricao{
+            p{
+                font-size: $font-mobile-st1;
+            }
+        }
+    }
+}
