@@ -4,9 +4,15 @@ $font-mobile-t2: 30px;
 $font-mobile-t3: 20px;
 $font-mobile-t4: 15px;
 
-$font-mobile-st1: 11px;
+$font-mobile-st1: 12px;
 // - DESKTOP 
 $font-desk-t1: 60px;
+
+// ========= PADDING =========
+$pad-1: 0.5rem;
+
+// ========= BORDER =========
+$border-1:6px;
 
 // ========= COLORS =========
 $col-branco1: #fff;
@@ -17,6 +23,8 @@ $back-gotaMe: #40F400;
 
 $setores: #1F7611;
 $setores-pessoas: #fff;
+
+$back-table: #EAEAEA;
 
 @mixin padding{
     padding: 0.5rem 2rem ;

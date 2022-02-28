@@ -14,18 +14,7 @@ body{
         position: absolute;
         top: 1rem;
         right: 1rem;
-        width: 100px;
-
     }
-    .fundo__gota{
-        max-height: 100%;
-    }
-    img{
-        width: 100%;
-        max-height: 100%;
-    }
-
-
     .gota__descricao{
         color: $col-branco2;
         position: absolute;
@@ -131,10 +120,10 @@ main{
 
 @media (max-width: 600px)
 {
+    .logo{
+        width: 55px;
+    }
     .gota{
-        .logo{
-            width: 55px;
-        }
         .gota__descricao{
             h1{
                 font-size: $font-mobile-t1;

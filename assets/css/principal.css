@@ -14,15 +14,6 @@ body {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  width: 100px;
-}
-
-.gota .fundo__gota {
-  max-height: 100%;
-}
-/* ds */
-  width: 100%;
-  max-height: 100%;
 }
 
 .gota .gota__descricao {
@@ -162,7 +153,7 @@ main .main__cartao .container__cartao .cartao img {
 }
 
 @media (max-width: 600px) {
-  .gota .logo {
+  .logo {
     width: 55px;
   }
   .gota .gota__descricao h1 {
@@ -170,14 +161,14 @@ main .main__cartao .container__cartao .cartao img {
     color: #fff;
   }
   .gota .gota__descricao p {
-    font-size: 11px;
+    font-size: 12px;
     color: #c9c8c8;
   }
   .main__cartao {
     max-height: 60%;
   }
   .rodape .rodape__descricao p {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
 
@@ -274,9 +265,6 @@ main .main__cartao .container__cartao .cartao img {
 }
 
 @media (max-width: 600px) {
-  #container__setores .header .top .logoo img {
-    width: 70px;
-  }
   #container__setores .header .sub__top h3 {
     font-size: 15px;
     color: #fff;
@@ -294,11 +282,6 @@ main .main__cartao .container__cartao .cartao img {
   position: relative;
 }
 
-#perfil .perfil__top img {
-  width: 100%;
-  height: 90%;
-}
-
 #perfil .perfil__top .perfil__header {
   position: absolute;
   top: 0;
@@ -312,22 +295,31 @@ main .main__cartao .container__cartao .cartao img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #perfil .perfil__top .perfil__header .perfil__pessoa {
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
+}
+
+#perfil .perfil__top .perfil__header .perfil__pessoa .quem h5 {
+  color: #fff;
 }
 
 #perfil .perfil__top .inf {
   position: absolute;
   bottom: 1rem;
   left: 50%;
-  width: 80%;
+  width: 70%;
   background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -345,8 +337,118 @@ main .main__cartao .container__cartao .cartao img {
 }
 
 #perfil .perfil__main {
-  height: 65%;
-  padding: 1rem;
+  height: 65vh;
+  padding: 1rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#perfil .perfil__main .perfil__tabela {
+  width: 100%;
+  padding: 0.5rem;
+  background: #EAEAEA;
+  border-radius: 6px;
+}
+
+#perfil .perfil__main .perfil__tabela table {
+  width: 100%;
+}
+
+#perfil .perfil__main .perfil__tabela table tr {
+  background: #fff;
+}
+
+#perfil .perfil__main .perfil__tabela table tr:nth-child(1) {
+  background: transparent;
+}
+
+#perfil .perfil__main .perfil__tabela table tr td {
+  padding: 0.2rem;
+}
+
+#perfil .perfil__main .perfil__tabela table tr td:nth-child(1) {
+  text-transform: uppercase;
+}
+
+#perfil .perfil__main .perfil__tabela table tr td:nth-child(2) {
+  text-transform: capitalize;
+}
+
+#perfil .perfil__main .informacoes__perfil {
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 1.5rem;
+  position: relative;
+}
+
+#perfil .perfil__main .informacoes__perfil span {
+  background: #fff;
+  padding: 0.2rem;
+  position: absolute;
+  top: -1rem;
+  left: 0.2rem;
+}
+
+#perfil .perfil__main .informacoes__perfil ul {
+  width: 100%;
+}
+
+#perfil .perfil__main .informacoes__perfil ul li {
+  padding: 0.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#perfil .perfil__main .informacoes__perfil ul li p::before {
+  content: ':  ';
+}
+
+#perfil .perfil__main .nossasredes {
+  background: #999191;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  #perfil .perfil__top .inf .li {
+    font-size: 12px;
+  }
+  .perfil__main .perfil__tabela table tr {
+    font-size: 12px;
+  }
+  .perfil__main .perfil__tabela table tr:nth-child(1) {
+    font-size: 14px;
+  }
+  .perfil__main .perfil__tabela table tr:nth-child(1) td:nth-child(3) {
+    position: relative;
+  }
+  .perfil__main .perfil__tabela table tr:nth-child(1) td:nth-child(3)::after {
+    content: url(../icons/seta__baixo.png);
+    position: absolute;
+    width: 20px;
+    top: 0;
+    right: 0;
+  }
+  .perfil__main .informacoes__perfil span {
+    font-size: 14px;
+  }
+  .perfil__main .informacoes__perfil ul {
+    width: 100%;
+  }
+  .perfil__main .informacoes__perfil ul li {
+    font-size: 12px;
+  }
 }
 
 * {
@@ -359,11 +461,12 @@ main .main__cartao .container__cartao .cartao img {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo {
-  width: 100px;
-}
-
 .home__blob {
   width: 50px;
+}
+
+.fundo__gota {
+  width: 100%;
+  max-height: 100%;
 }
 /*# sourceMappingURL=principal.css.map */
