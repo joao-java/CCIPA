@@ -302,6 +302,7 @@ main .main__cartao .container__cartao .cartao img {
 
 #perfil .perfil__top .perfil__header .perfil__pessoa {
   margin-top: 2rem;
+  padding: 0 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,6 +310,15 @@ main .main__cartao .container__cartao .cartao img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+}
+
+#perfil .perfil__top .perfil__header .perfil__pessoa .home__blob {
+  width: 100px;
+  fill: #fff;
+}
+
+#perfil .perfil__top .perfil__header .perfil__pessoa .home__blob img {
+  max-width: 100%;
 }
 
 #perfil .perfil__top .perfil__header .perfil__pessoa .quem h5 {
@@ -459,10 +469,6 @@ main .main__cartao .container__cartao .cartao img {
   list-style: none;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.home__blob {
-  width: 50px;
 }
 
 .fundo__gota {

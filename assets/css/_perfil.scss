@@ -21,9 +21,17 @@
             }
             .perfil__pessoa{
                 margin-top: 2rem;
+                padding: 0 $pad-1;
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
+                .home__blob{
+                    width: 100px;
+                    fill: #fff;
+                    img{
+                        max-width: 100%;
+                    }
+                }
                 .quem{
                     h5{
                         color: #fff;
