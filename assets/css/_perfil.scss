@@ -28,8 +28,14 @@
                 .home__blob{
                     width: 100px;
                     fill: #fff;
-                    img{
-                        max-width: 100%;
+                    object-fit: cover;
+                    g{
+                        max-width: 100px;
+                    }
+                    image{
+                        width: 100px;
+                        width: auto;
+                        height: auto;
                     }
                 }
                 .quem{

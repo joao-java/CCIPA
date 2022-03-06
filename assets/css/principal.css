@@ -315,10 +315,18 @@ main .main__cartao .container__cartao .cartao img {
 #perfil .perfil__top .perfil__header .perfil__pessoa .home__blob {
   width: 100px;
   fill: #fff;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-#perfil .perfil__top .perfil__header .perfil__pessoa .home__blob img {
-  max-width: 100%;
+#perfil .perfil__top .perfil__header .perfil__pessoa .home__blob g {
+  max-width: 100px;
+}
+
+#perfil .perfil__top .perfil__header .perfil__pessoa .home__blob image {
+  width: 100px;
+  width: auto;
+  height: auto;
 }
 
 #perfil .perfil__top .perfil__header .perfil__pessoa .quem h5 {
