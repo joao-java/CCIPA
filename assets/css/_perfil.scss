@@ -7,7 +7,7 @@
         width: 100%;
         height: 35vh;
         position: relative;
-
+        padding-bottom: 1rem;
         .perfil__header{
             position: absolute;
             top: 0;
@@ -21,22 +21,18 @@
             }
             .perfil__pessoa{
                 margin-top: 2rem;
-                padding: 0 $pad-1;
+                padding: 0 ($pad-1+2 );
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 width: 100%;
                 .home__blob{
-                    width: 100px;
+                    width: 110px;
                     fill: #fff;
+                }
+                .home__blob-img{
+                    width: 90%;
                     object-fit: cover;
-                    g{
-                        max-width: 100px;
-                    }
-                    image{
-                        width: 100px;
-                        width: auto;
-                        height: auto;
-                    }
                 }
                 .quem{
                     h5{
@@ -146,7 +142,7 @@
                             &:nth-child(3){
                                 position: relative;
                                 &::after{
-                                    content: url(../icons/seta__baixo.png);
+                                     content: url(../icons/seta__baixo.png);
                                     position: absolute;
                                     width: 20px;
                                     top: 0;
@@ -169,5 +165,5 @@
                 }
             }
         }
-    }
+     }
 }

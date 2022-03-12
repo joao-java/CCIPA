@@ -280,6 +280,7 @@ main .main__cartao .container__cartao .cartao img {
   width: 100%;
   height: 35vh;
   position: relative;
+  padding-bottom: 1rem;
 }
 
 #perfil .perfil__top .perfil__header {
@@ -302,31 +303,28 @@ main .main__cartao .container__cartao .cartao img {
 
 #perfil .perfil__top .perfil__header .perfil__pessoa {
   margin-top: 2rem;
-  padding: 0 0.5rem;
+  padding: 0 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
 #perfil .perfil__top .perfil__header .perfil__pessoa .home__blob {
-  width: 100px;
+  width: 110px;
   fill: #fff;
+}
+
+#perfil .perfil__top .perfil__header .perfil__pessoa .home__blob-img {
+  width: 90%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-#perfil .perfil__top .perfil__header .perfil__pessoa .home__blob g {
-  max-width: 100px;
-}
-
-#perfil .perfil__top .perfil__header .perfil__pessoa .home__blob image {
-  width: 100px;
-  width: auto;
-  height: auto;
 }
 
 #perfil .perfil__top .perfil__header .perfil__pessoa .quem h5 {
@@ -482,5 +480,6 @@ main .main__cartao .container__cartao .cartao img {
 .fundo__gota {
   width: 100%;
   max-height: 100%;
+  min-height: 100%;
 }
 /*# sourceMappingURL=principal.css.map */
