@@ -73,7 +73,7 @@ main .main__cartao .container__cartao {
 }
 
 main .main__cartao .container__cartao .cartao {
-  min-width: 40%;
+  width: 40%;
   height: 100%;
   margin: 0 0.5rem;
   border-radius: 5px;
@@ -115,8 +115,8 @@ main .main__cartao .container__cartao .cartao span::after {
 }
 
 main .main__cartao .container__cartao .cartao img {
-  max-width: 60%;
-  max-height: 80%;
+  width: 60%;
+  height: 80%;
 }
 
 .rodape {
