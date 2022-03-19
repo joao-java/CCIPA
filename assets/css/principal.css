@@ -93,6 +93,7 @@ main .main__cartao .container__cartao .cartao {
           align-items: center;
   -o-object-fit: cover;
      object-fit: cover;
+  padding: 0.5rem;
 }
 
 main .main__cartao .container__cartao .cartao span {
@@ -168,6 +169,9 @@ main .main__cartao .container__cartao .cartao img {
   .gota .gota__descricao p {
     font-size: 12px;
     color: #c9c8c8;
+  }
+  .main__cartao {
+    max-height: 60%;
   }
   .rodape .rodape__descricao p {
     font-size: 12px;

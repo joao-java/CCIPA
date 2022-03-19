@@ -65,6 +65,7 @@ main{
                 justify-content: center;
                 align-items: center;
                 object-fit: cover;
+                padding: $pad-1;
                 span{
                     color: #272727;
                     padding: 0.5rem;
@@ -140,7 +141,7 @@ main{
 
     //======= MAIN =======
     .main__cartao{
-        // max-height: 60%;
+        max-height: 60%;
     }
     //======= BOTTOM =======
     .rodape{
