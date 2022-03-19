@@ -134,6 +134,7 @@ main .main__cartao .container__cartao .cartao img {
   top: 50%;
   left: 20%;
   width: 90%;
+  height: 100%;
   -webkit-transform: translateX(-17%);
           transform: translateX(-17%);
   display: -webkit-box;
