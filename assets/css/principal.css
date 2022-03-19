@@ -14,6 +14,7 @@ body {
 .gota img {
   -o-object-fit: cover;
      object-fit: cover;
+  max-height: 100%;
 }
 
 .gota .logo {
