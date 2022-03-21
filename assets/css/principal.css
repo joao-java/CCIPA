@@ -333,7 +333,7 @@ main .main__cartao .container__cartao .cartao img {
 }
 
 #perfil .perfil__top .perfil__header .perfil__pessoa .home__blob-img {
-  width: 90%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
