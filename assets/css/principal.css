@@ -442,9 +442,22 @@ main .main__cartao .container__cartao .cartao img {
 }
 
 #perfil .perfil__main .nossasredes {
-  background: #999191;
   width: 100%;
-  height: 100%;
+}
+
+#perfil .perfil__main .nossasredes .redesss {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+}
+
+#perfil .perfil__main .nossasredes .redesss .redes {
+  font-size: 35px;
 }
 
 @media (max-width: 600px) {
