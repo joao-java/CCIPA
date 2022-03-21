@@ -1,12 +1,13 @@
 @import '_variaveis';
 
 body{
+    height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 
 .gota{
-    height: 40vh;
+    height: 40%;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -34,7 +35,7 @@ body{
 
 main{
     width: 100%;
-    height: 40vh;
+    height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,21 +95,24 @@ main{
 
 .rodape{
     width: 100%;
-    height: 20vh;
+    height: 20%;
     position: relative;
     overflow: hidden;
+    object-fit: cover;;
     img{
         width: 100%;
         height: 100%;
     }
     .rodape__descricao{
         position: absolute;
-        top: 50%;
-        left: 20%;
-        width: 90%;
-        transform: translateX(-17%);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: translate(-20% -20%);
         display: flex;
         align-items: center;
+        padding: 1rem;
         p{
             color: $col-branco2;
         }
