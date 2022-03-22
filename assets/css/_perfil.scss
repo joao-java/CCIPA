@@ -130,6 +130,15 @@
 @media (max-width: 600px){
     #perfil{
         .perfil__top{
+            .perfil__header{
+                .perfil__pessoa{
+                    .quem{
+                        h4{
+                            font-size: $font-mobile-st1;
+                        }
+                    }
+                }
+            }
             .inf{
                 .li{
     
@@ -173,4 +182,9 @@
             }
         }
      }
+}
+
+@media (max-width: 350px)
+{
+    
 }

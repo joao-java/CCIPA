@@ -12,7 +12,7 @@ body{
     position: relative;
     overflow: hidden;
     img{
-        object-fit: cover;
+        object-fit: fill;
         max-height: 100%;
     }
     .logo{
@@ -102,6 +102,7 @@ main{
     img{
         width: 100%;
         height: 100%;
+        object-fit: fill;
     }
     .rodape__descricao{
         position: absolute;
@@ -146,12 +147,62 @@ main{
     //======= MAIN =======
     .main__cartao{
         max-height: 60%;
+        .container__cartao{
+            .cartao{
+                span{
+                    font-size: $font-mobile-st1 + 5px;
+                }
+                img{
+                    width: 40%;
+                    height: 40%;
+                }
+            }
+        }
     }
     //======= BOTTOM =======
     .rodape{
         .rodape__descricao{
             p{
                 font-size: $font-mobile-st1;
+            }
+        }
+    }
+}
+
+@media (max-width: 300px)
+{
+    .logo{
+        width: 55px;
+    }
+    .gota{
+        .gota__descricao{
+            h1{
+                font-size: $font-mobile-t1 ;
+                color: $col-branco1;
+            }
+            p{
+                font-size: $font-mobile-st1;
+                color: $col-branco2;
+            }
+        }
+    }
+
+    //======= MAIN =======
+    .main__cartao{
+        max-height: 60%;
+        .container__cartao{
+            .cartao{
+                span{
+                    font-size: $font-mobile-st1 - 2px;
+                }
+            }
+        }
+    }
+    //======= BOTTOM =======
+    .rodape{
+        .rodape__descricao{
+            p{
+                font-size: $font-mobile-st1 - 4px;
             }
         }
     }
